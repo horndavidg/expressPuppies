@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Puppies Home Page</title>
+</head>
+<body>
+<p>	
+<a href="/puppies/new">Let's ADD some Puppies!</a>
+</p>
+<p>
+<a href="/about">Who created this AWESOME site?</a>
+</p>
+
+<% puppies.forEach(function(puppy){ %>
+
+<p>
+	<%= puppy.puppyName%>
+	<a href="/puppies/<%= puppy.id%>">Check Me Out!</a>
+</p>
+	<% }) %>
+
+<p>
+	<a href="/contact">Contact Us!</a>
+</p>
+</body>
+</html>
+
+
